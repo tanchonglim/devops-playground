@@ -1,0 +1,23 @@
+{
+  "name": "devops-playground",
+  "version": "1.0.0",
+  "description": "hello, this is the second note",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanchonglim/devops-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanchonglim/devops-playground/issues"
+  },
+  "homepage": "https://github.com/tanchonglim/devops-playground#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

@@ -1,3 +1,3 @@
 # devops-playground
 
-hello, this is the 6 note
+hello, this is the 7 note

@@ -25,6 +25,7 @@ pipeline  {
                 echo "Start testing"
                 bat 'docker rm -f docker-devops-playground'
                 bat 'docker run -d --name docker-devops-playground --publish 8088:8088 tanchonglim/devops-playground'
+                bat 'cd C:\\Program Files (x86)\\apache-jmeter-5.4.3\\bin'
                 bat 'jmeter -jjmeter.save.saveservice.output_format=xml -n -t "C:\\Users\\User\\Desktop\\SC devops\\test.jmx" -l "C:\\Users\\User\\Desktop\\SC devops\\result.jtl"'
                 perfReport 'C:\\Users\\User\\Desktop\\SC devops\\result.jtl'
                 bat 'docker stop docker-devops-playground'

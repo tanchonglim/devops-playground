@@ -45,8 +45,7 @@ pipeline  {
         stage("Update Jira"){
             //update Jira issue to done
             steps {
-                testIssue = [transition: [id: '21'] ]
-                jiraTransitionIssue input: testIssue, site: "devops", idOrKey: "DEV-03"
+                jiraTransitionIssue input: [transition: [id: '21'] ], site: "devops", idOrKey: "DEV-03"
             }
         }
 

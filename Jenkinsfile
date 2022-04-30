@@ -44,11 +44,9 @@ pipeline  {
         }
         stage("Update Jira"){
             //update Jira issue to done
-            steps{
-                def testIssue = [transition: [id: '21'] ]
-                response = jiraTransitionIssue input: testIssue, site: "devops", idOrKey: "DEV-03"
-                echo response.successful.toString()
-                echo response.data.toString()
+            steps {
+                testIssue = [transition: [id: '21'] ]
+                jiraTransitionIssue input: testIssue, site: "devops", idOrKey: "DEV-03"
             }
         }
 

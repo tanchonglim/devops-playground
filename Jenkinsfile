@@ -44,6 +44,7 @@ pipeline  {
         }
         stage("Update Jira"){
             //update Jira issue to done
+            //for demonstration perpose, issue idOrKey is hardcoded
             steps {
                 jiraTransitionIssue input: [transition: [id: '21'] ], site: "devops", idOrKey: "DEV-03"
             }
